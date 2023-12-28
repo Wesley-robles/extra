@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala Extra BM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p id="dataHoje">data</p>
+            <div class = cabecalho>
+                <img id= logo src="./images/CBMPR.svg" alt="Logo Corpo de Bombeiros do Paraná">
+                <div id = texto>
+                    <h1>Corpo de Bombeiros do Párana</h1>
+                    <h2>Marcação escala extra</h2>
+                </div>
+            </div>
+    </header>
+    <section>
+        <div id="dateSelector">
+            
+            <select id="month">
+                <option value="0">Janeiro</option>
+                <option value="1">Fevereiro</option>
+                <option value="2">Março</option>
+                <option value="3">Abril</option>
+                <option value="4">Maio</option>
+                <option value="5">Junho</option>
+                <option value="6">Julho</option>
+                <option value="7">Agosto</option>
+                <option value="8">Setembro</option>
+                <option value="9">Outubro</option>
+                <option value="10">Novembro</option>
+                <option value="11">Dezembro</option>
+            </select>
+            <select id="year"></select>
+            <button id="showCalendar">Mostrar Calendário</button>
+            <a href="./add.html" class="button-link">Gerenciamento</a>
+
+        </div>
+        <div id="mainContainer">
+            <div id="calendarContainer">
+        <div id="calendar"></div>
+        <div id="appointmentTable">
+            <!-- A tabela de agendamentos será inserida aqui -->
+        </div>
+        
+
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

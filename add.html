@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala Extra BM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p id="dataHoje">data</p>
+            <div class = cabecalho>
+                <img id= logo src="./images/CBMPR.svg" alt="Logo Corpo de Bombeiros do Paraná">
+                <div id = texto>
+                    <h1>Corpo de Bombeiros do Párana</h1>
+                    <h2>Marcação escala extra</h2>
+                </div>
+            </div>
+    </header>
+    <section>
+        <a href="./index.html" class="button-link">Retornar</a><br>
+        Adicionar usuários
+    </section>
+    <section>
+        <h1>Adicionar Militar</h1>
+
+        <form id="addPersonForm">
+            <div>
+                <label for="postoGraduacao">Posto/Graduação:</label>
+                <input type="text" id="postoGraduacao" name="postoGraduacao" required>
+            </div>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div>
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg" required>
+            </div>
+
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <div id="addTimeSlot">
+            <h3>Adicionar Horário</h3>
+            <form id="timeSlotForm">
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+        
+                <label for="time">Horário:</label>
+                <select id="time" name="time" required>
+                    <option value="08:00-20:00">08:00h às 20:00h</option>
+                    <option value="20:00-08:00">20:00h às 08:00h</option>
+                    <option value="12:00-00:00">12:00h às 00:00h</option>
+                </select>
+        
+                <label for="slots">Número de Vagas:</label>
+                <input type="number" id="slots" name="slots" min="1" required>
+        
+                <button type="submit">Adicionar Horário</button>
+            </form>
+        </div>
+        
+
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

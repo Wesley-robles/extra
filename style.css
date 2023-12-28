@@ -1,0 +1,83 @@
+header {
+    background: #ffffff url("./images/cropped-Intranet-BM-Intranet-do-Corpo-de-Bombeiros-Militar-do-Parana-3.png");
+    padding: 0 0 20px 0;
+}
+
+#dataHoje {
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 15pt;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 300px;
+       
+}
+
+#texto {
+    margin-left: 20px;
+    color: white;
+}
+
+#logo {
+    width: 150px;
+}
+
+#dateSelector {
+    text-align: center;
+    padding: 10px 0 0 0 ;
+}
+
+#calendar {
+    max-width: 600px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 dias da semana */
+    text-align: center;
+    
+}
+
+.day {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.day-header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+#appointmentTable {
+    margin-left: 20px; /* Espaçamento do calendário */
+}
+
+#appointmentTable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#appointmentTable th, #appointmentTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; /* Remove o sublinhado típico dos links */
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
